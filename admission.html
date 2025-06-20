@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url('Madanapalle-Institute-of-Technology-and-Science.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS College Admission Form</title>
+</head>
+<body>
+    <h1 align="center">MITS College Admission Form</h1>
+    <form action="admission.php">
+        <h3>Personal Details</h3>
+        Full Name: <input type="text" name="student_name" required> <br><br>
+        Father's Name: <input type="text" name="father_name" required> <br><br>
+        Mother's Name: <input type="text" name="mother_name" required> <br><br>
+        Date Of Birth: <input type="date" name="dob" required> <br><br>
+        Gender: 
+        <input type="radio" id="female" name="gender" value="Female"> 
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <h3>Contact Details</h3>
+        Phone Number: <input type="tel" name="phone" required>
+        Email Address: <input type="email" name="email" required> <br><br>
+
+        <h3>Addresses</h3>
+        <fieldset>
+            <legend>Present Address (Andhra Pradesh)</legend>
+            Division: <input type="text" name="present_division"> <br><br>
+            District:
+            <select name="present_district">
+                <option value="Anantapur">Anantapur</option>
+                <option value="Chittoor">Chittoor</option>
+                <option value="Kadapa">Kadapa</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Nellore">Nellore</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Prakasam">Prakasam</option>
+                <option value="Krishna">Krishna</option>
+                <option value="West Godavari">West Godavari</option>
+                <option value="East Godavari">East Godavari</option>
+                <option value="Srikakulam">Srikakulam</option>
+                <option value="Vizianagaram">Vizianagaram</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+            </select> <br><br>
+            Address: <textarea name="present_address" cols="40" rows="4"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Permanent Address (Andhra Pradesh)</legend>
+            Division: <input type="text" name="permanent_division"> <br><br>
+            District:
+            <select name="permanent_district">
+                <option value="Anantapur">Anantapur</option>
+                <option value="Chittoor">Chittoor</option>
+                <option value="Kadapa">Kadapa</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Nellore">Nellore</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Prakasam">Prakasam</option>
+                <option value="Krishna">Krishna</option>
+                <option value="West Godavari">West Godavari</option>
+                <option value="East Godavari">East Godavari</option>
+                <option value="Srikakulam">Srikakulam</option>
+                <option value="Vizianagaram">Vizianagaram</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+            </select> <br><br>
+            Address: <textarea name="permanent_address" cols="40" rows="4"></textarea>
+        </fieldset>
+        <br>
+
+        <h3>Additional Details</h3>
+        Religion: <input type="text" name="religion">
+        Caste: <input type="text" name="caste">
+        Sub-Caste: <input type="text" name="subcaste"> <br><br>
+        Nationality: <input type="text" name="nationality"> 
+        Aadhaar Number: <input type="text" name="aadhaar"> <br><br>
+        Blood Group: <input type="text" name="blood_group"> 
+        Insert Photo: <input type="file" name="photo"> <br><br>
+
+        <h3>Course Details</h3>
+        Course Applying For:
+        <select name="course" id="course">
+            <optgroup label="MBA">
+                <option value="MBA Marketing">Marketing</option>
+                <option value="MBA Business Analytics">Business Analytics</option>
+                <option value="MBA HR">Human Resources</option>
+                <option value="MBA Finance">Finance</option>
+            </optgroup>
+            <optgroup label="B.Tech">
+                <option value="B.Tech CSE">Computer Science and Engineering</option>
+                <option value="B.Tech ECE">Electronics & Communication Engineering</option>
+                <option value="B.Tech ME">Mechanical Engineering</option>
+                <option value="B.Tech Civil">Civil Engineering</option>
+                <option value="B.Tech AI & DS">Artificial Intelligence & Data Science</option>
+            </optgroup>
+            <optgroup label="MCA/BCA">
+                <option value="MCA">MCA</option>
+                <option value="BCA">BCA</option>
+            </optgroup>
+            <optgroup label="Commerce & Management">
+                <option value="BBA">BBA</option>
+                <option value="B.Com General">B.Com General</option>
+                <option value="B.Com CA">B.Com Computer Applications</option>
+            </optgroup>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <h3>Academic Qualification</h3>
+        Highest Qualification: <input type="text" name="qualification"> <br><br>
+        Year of Passing: <input type="text" name="year_passing"> <br><br>
+        Percentage / Grade: <input type="text" name="percentage"> <br><br>
+
+        <p>I hereby declare that all the information provided is true to the best of my knowledge, and I agree to abide by the rules and regulations of the institution.</p>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
